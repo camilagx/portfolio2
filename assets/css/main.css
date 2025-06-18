@@ -2670,11 +2670,17 @@ input, select, textarea {
 
 		/* Nav */
 		#header nav {
-			width: 85%;
+			width: 75%;
 		}
+			@media screen and (max-width:980px) {
+				#header nav {
+					margin:2em auto;
+				}
+			}
 
 		nav ul li {
 			text-transform: uppercase;
+			padding-top: 0.4em;
 			border-top: 1px solid rgb(157, 157, 157);
 		}
 
@@ -2729,7 +2735,8 @@ input, select, textarea {
 
 	#main {
 		margin-left: 35%;
-		max-width: 54em;
+		/* max-width: 54em; */
+		max-width: 60em;
 		padding: 8em 4em 4em 4em;
 		width: calc(100% - 35%);
 	}
