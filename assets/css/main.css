@@ -2711,6 +2711,12 @@ input, select, textarea {
 				padding-top: 0;
 			}
 
+			#main #one > div {
+				display: flex; 
+				justify-content: space-between;
+			}
+			
+
 /* Poptrox */
 
 	@-moz-keyframes spin {
