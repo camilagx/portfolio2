@@ -24,7 +24,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	scroll-behavior: smooth;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -34,7 +35,7 @@ body {
 	line-height: 1;
 }
 
-ol, ul {
+ol, ul, nav ul {
 	list-style: none;
 }
 
@@ -2148,7 +2149,7 @@ input, select, textarea {
 			}
 
 			.image.avatar img {
-				/* border-radius: 100%; */
+				border-radius: 100%;
 				width: 100%;
 			}
 
@@ -2582,6 +2583,10 @@ input, select, textarea {
 			margin: 0;
 		}
 
+		.work-item p:last-of-type {
+			margin-top: .8em;
+		}
+
 /* Header */
 
 	#header {
@@ -2603,7 +2608,7 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), url("../../images/background-1.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
@@ -2650,8 +2655,27 @@ input, select, textarea {
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			/* width: 6.25em; */
-			width: 12em;
+			width: 6.25em;
+			/* width: 12em; */
+		}
+
+		/* Nav */
+		#header nav {
+			width: 85%;
+		}
+
+		nav ul li {
+			text-transform: uppercase;
+			border-top: 1px solid rgb(157, 157, 157);
+		}
+
+		nav ul a {
+			color: rgb(228, 228, 228);
+			border-bottom: none;
+		}
+
+			nav ul a:hover {
+			color: white !important;
 		}
 
 /* Footer */
@@ -3095,7 +3119,7 @@ input, select, textarea {
 			#footer {
 				background-attachment: scroll;
 				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+				background-image: url("images/overlay.png"), url("../../images/background-1.jpg");
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
