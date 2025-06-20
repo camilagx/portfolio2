@@ -1,1 +1,6 @@
-/downloadable
+downloadable/
+
+/** Firebase files **/
+.firebase
+.firebaserc
+firebase.json
