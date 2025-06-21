@@ -2758,9 +2758,11 @@ input, select, textarea {
 				justify-content: space-between;
 			}
 
-			#main #two div {
-				display: flex;
-				justify-content: space-between;
+			@media (min-width:480px){
+				#main #two div {
+					display: flex;
+					justify-content: space-between;
+				}
 			}
 			
 
